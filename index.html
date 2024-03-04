@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="js/app.js" defer></script>
     <title>taskList</title>
 </head>
 <body>
@@ -15,6 +17,47 @@
             <li class="navItem">Fallidas</li>
         </ul>
     </header>
-    <main></main>
+    <form action="#" id="formulario">
+        <input type="text" name="tarea" id="" value="Mi primera tarea">
+        <input type="date" name="dateStart" id="" value="2024-03-04">
+        <input type="date" name="dateEnd" value="2024-03-04">
+        <select name="responsable" id="">
+            <option value="Persona1">Persona 1</option>
+            <option value="Persona2">Persona 2</option>
+            <option value="Persona3">Persona 3</option>
+        </select>
+        <select name="prioridad" id="">
+            <option value="urgente">urgente</option>
+            <option value="noUrgente">No urgente</option>
+        </select>
+        <input type="submit" value="enviar">
+        <input type="text" value="Pendiente" name="estado" hidden>
+    </form>
+    <div class="containerPendientes">
+        <!-- <div class="card">
+            <div class="headerCard">
+                <h3>Prioridad</h3>
+            </div>
+            <div class="bodyCard">
+                <p>Mi primera tarea</p>
+            </div>
+            <div class="padreFechas">
+                <div>
+                    <p>Inicio</p>
+                    <p>04/03/2024</p>
+                </div>
+                <div>
+                    <p>Fin</p>
+                    <p>04/03/2024</p>
+                </div>                
+            </div>
+            <div class="footerCard">
+                <i class='bx bxs-check-square cumplida' id=""></i>
+                <i class='bx bxs-x-square fallida' id=""></i>
+            </div>
+        </div> -->
+    </div>
+    <div class="containerCumplidas"></div>
+    <div class="containerFallidas"></div>
 </body>
 </html>

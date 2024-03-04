@@ -1,0 +1,22 @@
+{
+  "tareas": [
+    {
+      "id": "a641",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Cumplida"
+    },
+    {
+      "id": "9c85",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Fallida"
+    }
+  ]
+}

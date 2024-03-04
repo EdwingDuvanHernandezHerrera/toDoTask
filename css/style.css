@@ -31,3 +31,15 @@ header .agregar a{
     text-decoration: none;
     color: black;
 }
+
+.containerPendientes{
+    color: red;
+}
+
+.containerCumplidas{
+    color: blue;
+}
+
+.containerFallidas{
+    color: green;
+}
