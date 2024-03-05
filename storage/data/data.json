@@ -1,7 +1,7 @@
 {
   "tareas": [
     {
-      "id": "a641",
+      "id": "ac71",
       "tarea": "Mi primera tarea",
       "dateStart": "2024-03-04",
       "dateEnd": "2024-03-04",
@@ -10,13 +10,49 @@
       "estado": "Cumplida"
     },
     {
-      "id": "9c85",
+      "id": "18c9",
       "tarea": "Mi primera tarea",
       "dateStart": "2024-03-04",
       "dateEnd": "2024-03-04",
       "responsable": "Persona1",
       "prioridad": "urgente",
       "estado": "Fallida"
+    },
+    {
+      "id": "28d8",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Fallida"
+    },
+    {
+      "id": "bbee",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Cumplida"
+    },
+    {
+      "id": "032f",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Fallida"
+    },
+    {
+      "id": "a291",
+      "tarea": "Mi primera tarea",
+      "dateStart": "2024-03-04",
+      "dateEnd": "2024-03-04",
+      "responsable": "Persona1",
+      "prioridad": "urgente",
+      "estado": "Pendiente"
     }
   ]
 }

@@ -1,7 +1,10 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    margin: 0;
 }
 
 header{
@@ -33,13 +36,86 @@ header .agregar a{
 }
 
 .containerPendientes{
-    color: red;
-}
-
-.containerCumplidas{
     color: blue;
 }
 
-.containerFallidas{
+.containerCumplidas{
     color: green;
+}
+
+.containerFallidas{
+    color: red;
+}
+
+.modalAgregar{
+    width: 50%;
+    height: 70vh;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+}
+
+.modalAgregar::backdrop{
+    backdrop-filter: blur(5px);
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bx-x{
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.bodyForm{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bodyForm input, .bodyForm select{
+    width: 30%;
+    text-align: center;
+}
+
+
+.principal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.principal .containerCards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.principal .containerCards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    
+
 }

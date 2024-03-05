@@ -7,6 +7,18 @@ const containerPend = document.querySelector(".containerPendientes");
 const containerCump = document.querySelector(".containerCumplidas");
 const containerFall = document.querySelector(".containerFallidas");
 
+const botonAgregar = document.querySelector(".agregar");
+const modalAgregar = document.querySelector(".modalAgregar");
+const btnCerrarModal = document.querySelector("#btnCerrar");
+
+botonAgregar.addEventListener("click", () => {
+    modalAgregar.showModal();
+})
+btnCerrarModal.addEventListener("click", () => {
+    modalAgregar.close();
+})
+
+
 document.addEventListener('DOMContentLoaded', async (e) => {
     let tareas = await getData();
     await mostrarDatos(containerPend, "Pendiente", tareas);
@@ -28,7 +40,7 @@ function obtenerForm(submit){
     console.log(inputsForm);
 }
 
-async function mostrarDatos(padre, estado, tareas){
+export async function mostrarDatos(padre, estado, tareas){
     
     let tareasFiltradas = tareas.filter(dato => dato.estado === estado);
     tareasFiltradas.forEach(element => {
@@ -84,4 +96,12 @@ async function obtenerDataId(id){
 }
 
 
+const btnPendientes = document.querySelector(".btnPend");
+const btnCumplidas = document.querySelector(".btnCump");
+const btnFallidas = document.querySelector(".btnFall");
+const principal = document.querySelector(".principal");
 
+btnPendientes.addEventListener("click", ()=>{
+    principal.innerHTML = /*html*/`
+    <div class="containerPendientes">`
+})

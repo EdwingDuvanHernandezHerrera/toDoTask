@@ -37,5 +37,4 @@ function putData(tareaAEnviar, id){
 
 
 
-
-export {getData, postData, getDataId, putData}
+export{getData, postData, getDataId, putData}

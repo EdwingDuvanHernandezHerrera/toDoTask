@@ -12,28 +12,51 @@
     <header>
         <button class="agregar"><a href="">Agregar</a></button>
         <ul class="navLinks">
-            <li class="navItem">Pendientes</li>
-            <li class="navItem">Cumplidas</li>
-            <li class="navItem">Fallidas</li>
+            <li class="navItem btnPend">Pendientes</li>
+            <li class="navItem btnCump">Cumplidas</li>
+            <li class="navItem btnFall">Fallidas</li>
         </ul>
     </header>
-    <form action="#" id="formulario">
-        <input type="text" name="tarea" id="" value="Mi primera tarea">
-        <input type="date" name="dateStart" id="" value="2024-03-04">
-        <input type="date" name="dateEnd" value="2024-03-04">
-        <select name="responsable" id="">
-            <option value="Persona1">Persona 1</option>
-            <option value="Persona2">Persona 2</option>
-            <option value="Persona3">Persona 3</option>
-        </select>
-        <select name="prioridad" id="">
-            <option value="urgente">urgente</option>
-            <option value="noUrgente">No urgente</option>
-        </select>
-        <input type="submit" value="enviar">
-        <input type="text" value="Pendiente" name="estado" hidden>
-    </form>
-    <div class="containerPendientes">
+    <dialog class="modalAgregar">
+        <form action="#" id="formulario">
+            <div class="formHeader">
+                <h3>Agregar nueva tarea</h3>
+                <i class='bx bx-x' id="btnCerrar"></i>
+            </div>
+
+            <div class="bodyForm">
+                <h4>Descripción</h4>
+                <input type="text" name="tarea" id="" value="Mi primera tarea">
+            </div>
+            <div class="bodyForm">
+                <h4>Fecha inicio</h4>
+                <input type="date" name="dateStart" id="" value="2024-03-04">
+            </div>
+            <div class="bodyForm">
+                <h4>Fecha fin</h4>
+                <input type="date" name="dateEnd" value="2024-03-04">
+            </div>
+            <div class="bodyForm">
+                <h4>Responsable</h4>
+                <select name="responsable" id="">
+                    <option value="Persona1">Persona 1</option>
+                    <option value="Persona2">Persona 2</option>
+                    <option value="Persona3">Persona 3</option>
+                </select>
+            </div>
+            <div class="bodyForm">
+                <h4>Prioridad</h4>
+                <select name="prioridad" id="">
+                    <option value="urgente">Urgente</option>
+                    <option value="noUrgente">No urgente</option>
+                </select>
+            </div>
+            <input type="submit" value="enviar">
+            <input type="text" value="Pendiente" name="estado" hidden>
+        </form>
+    </dialog>
+    <main class="principal">
+        <div class="containerPendientes containerCards">
         <!-- <div class="card">
             <div class="headerCard">
                 <h3>Prioridad</h3>
@@ -56,8 +79,9 @@
                 <i class='bx bxs-x-square fallida' id=""></i>
             </div>
         </div> -->
-    </div>
-    <div class="containerCumplidas"></div>
-    <div class="containerFallidas"></div>
+        </div>
+        <div class="containerCumplidas containerCards"></div>
+        <div class="containerFallidas containerCards"></div>
+    </main>    
 </body>
 </html>
